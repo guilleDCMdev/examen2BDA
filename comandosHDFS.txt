@@ -25,3 +25,12 @@ hdfs dfs -rm /ruta/archivo
 # Comando: hdfs dfs -rmdir /ruta/directorio
 # Descripción: Elimina un directorio vacío en HDFS.
 hdfs dfs -rmdir /ruta/directorio
+
+
+# Comando: docker cp /ruta/archivo_local contenedor:/ruta_destino
+# Descripción: Copia un archivo desde el sistema de archivos local al contenedor Docker.
+docker cp /c:/Users/Vespertino/Desktop/archivo_local contenedor:/ruta_destino
+
+# Comando: hdfs dfs -put /ruta_destino/archivo_local /ruta_hdfs
+# Descripción: Copia un archivo desde el contenedor Docker a HDFS.
+hdfs dfs -put /ruta_destino/archivo_local /ruta_hdfs
